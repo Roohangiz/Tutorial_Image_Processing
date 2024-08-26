@@ -21,8 +21,12 @@ img1_m = cv.bitwise_and(img1, img1, mask = mask)
 img2_m = cv.bitwise_and(img2, img2, mask = mask_inv)
 imgadded = img1_m + img2_m
 
-cv.imshow('Mask1', img1_m)
-cv.imshow('Mask 2', img2_m)
+cv.imshow('Image1', img1)
+cv.imshow('Image2', img2)
+cv.imshow('Mask', mask)
+cv.imshow('Mask_INV', mask_inv)
+cv.imshow('Mask_img1', img1_m)
+cv.imshow('Mask_img2', img2_m)
 cv.imshow('Added 1', added)
 cv.imshow('Added 2', imgadded)
 
